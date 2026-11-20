@@ -1,7 +1,7 @@
 # Intent Classification for Banking Chatbots (`BANKING77`)
 
-**Course:** NLP, Language Models & Analytics — Individual Project #7  
-**Submitted Code & Notebook:** `INDV/intent_classifier/` ([intent_classification_e2e.ipynb](../notebooks/intent_classification_e2e.ipynb), [app.py](../app.py))
+**Student:** Eashaan Marwah (`BS24DMU001`) | **Course:** NLP, Language Models & Analytics — Individual Project #7  
+**Repository:** https://github.com/Eashaan19/Banking77-Intent-Classifier | **Deadline:** November 25, 2026
 
 ---
 
