@@ -1,0 +1,4 @@
+mode,description,vocab_size,val_accuracy,val_macro_f1,val_weighted_f1
+raw_minimal,Raw Minimal (Unicode + whitespace only),9167,0.8792528352234823,0.875291019801677,0.8792802527552251
+classical_domain_aware,Domain-Aware Classical (Preserves negation + _amount_/_num_),9153,0.8785857238158773,0.8734392611007227,0.878560906646684
+classical_aggressive,Aggressive Classical (NLTK stopwords + WordNet lemma),5727,0.8559039359573049,0.8507087122079393,0.8557298584124967

@@ -1,0 +1,29 @@
+# Python bytecode & test/notebook caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local dataset caches (auto-downloaded on first run from mteb/banking77)
+data/*.json
+data/*.parquet
+data/*.csv
+
+# Large Transformer weights & release archives (distributed via GitHub Releases)
+models/transformer_intent/*.safetensors
+models/transformer_intent/*.bin
+models/transformer_intent/_checkpoints/
+*.zip
+
+# OS & editor clutter
+.DS_Store
+Thumbs.db
+desktop.ini

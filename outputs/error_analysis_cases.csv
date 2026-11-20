@@ -1,0 +1,11 @@
+case_type,text,true_intent,baseline_pred,baseline_conf,transformer_pred,transformer_conf,likely_cause
+Transformer Win (Baseline Wrong),What is the best way to exchange currency?,exchange_via_app,exchange_charge,0.422,exchange_via_app,0.999,Fine-grained semantic overlap
+Transformer Win (Baseline Wrong),Topping up my card is not working because I believe the top up is pending,pending_top_up,top_up_failed,0.647,pending_top_up,0.999,Negation / polarity nuance
+Transformer Win (Baseline Wrong),Do you know what the restriction of the disposable cards are?,disposable_card_limits,get_disposable_virtual_card,0.459,disposable_card_limits,0.999,Fine-grained semantic overlap
+Transformer Win (Baseline Wrong),This is very frustrating. I can't get my card to work on any ATM I try and I've tried 3 of them so far. What's going on? Can you please fix this issue immediately?,declined_cash_withdrawal,card_not_working,0.284,declined_cash_withdrawal,0.999,Negation / polarity nuance
+Transformer Win (Baseline Wrong),What's the refund process?,request_refund,Refund_not_showing_up,0.716,request_refund,0.999,Short / underspecified query
+Transformer Error (Limitation),Can I exchange currencies?,fiat_currency_support,exchange_via_app,0.737,exchange_via_app,0.999,Short / underspecified query
+Transformer Error (Limitation),What can I use a virtual disposable card for?,disposable_card_limits,get_disposable_virtual_card,0.953,get_disposable_virtual_card,0.999,Fine-grained semantic overlap
+Transformer Error (Limitation),When I try and to buy something using my card it keeps getting declined.,declined_transfer,declined_card_payment,0.555,declined_card_payment,0.999,Fine-grained semantic overlap
+Transformer Error (Limitation),How do I top up my card?,transfer_into_account,topping_up_by_card,0.84,topping_up_by_card,0.999,Paraphrase / lexical gap
+Transformer Error (Limitation),My card is just not working at this time.,virtual_card_not_working,card_not_working,0.387,card_not_working,0.999,Negation / polarity nuance

@@ -1,0 +1,4 @@
+| model                                   |   accuracy |   macro_precision |   macro_recall |   macro_f1 |   weighted_precision |   weighted_recall |   weighted_f1 |   mean_latency_ms |   p95_latency_ms |   size_mb |
+|:----------------------------------------|-----------:|------------------:|---------------:|-----------:|---------------------:|------------------:|--------------:|------------------:|-----------------:|----------:|
+| TF-IDF + Logistic Regression (Baseline) |     0.8947 |            0.8995 |         0.8946 |     0.8948 |               0.8995 |            0.8947 |        0.8949 |              0.79 |             1.24 |      5.73 |
+| Fine-Tuned distilbert-base-uncased      |     0.9243 |            0.9272 |         0.9242 |     0.9243 |               0.9273 |            0.9243 |        0.9244 |             18.65 |            22.01 |    256.34 |
