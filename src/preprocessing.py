@@ -23,6 +23,7 @@ _FALLBACK_STOPWORDS = frozenset(
         "has", "he", "in", "is", "it", "its", "of", "on", "that", "the",
         "to", "was", "were", "will", "with", "i", "you", "my", "me", "we",
         "our", "your", "they", "their", "this", "these", "those", "am",
+        "not", "no", "nor", "never",
     }
 )
 

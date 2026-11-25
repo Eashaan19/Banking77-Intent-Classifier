@@ -27,3 +27,7 @@ models/transformer_intent/_checkpoints/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Temporary local viva prep & demo notes (never push to GitHub)
+viva_notebook_bundle/
+report/demo_script.md

@@ -44,8 +44,8 @@ An end-to-end customer-support intent classification system covering **77 fine-g
 │   └── transformer_intent/             # Config/tokenizer/metadata included; extract release weights here
 ├── outputs/                            # Exported CSV/Markdown tables & 300-DPI report charts
 └── report/
-    ├── summary_report_draft.md         # 1-2 page summary report draft
-    └── demo_script.md                  # 2-3 minute live demo walkthrough script
+    ├── Eashaan_Marwah_BS24DMU001_NLP_Report.pdf   # Final 2-page submission report (PDF)
+    └── Eashaan_Marwah_BS24DMU001_NLP_Report.docx  # Final 2-page submission report (Word)
 ```
 
 ---
@@ -59,6 +59,7 @@ python -m venv .venv
 # macOS / Linux:      source .venv/bin/activate
 pip install torch --index-url https://download.pytorch.org/whl/cpu
 pip install -r requirements.txt
+python -c "import nltk; nltk.download('stopwords'); nltk.download('wordnet')"
 ```
 
 ### 2. Add the Fine-Tuned DistilBERT Weights (GitHub Release)
@@ -67,7 +68,7 @@ Because `model.safetensors` (`255.6 MB`) exceeds GitHub's `100 MB` file limit, i
 1. Download **`transformer_intent.zip`** from this repository's **Releases** page.
 2. Extract its contents directly into **`models/transformer_intent/`** so that `config.json`, `model.safetensors`, `tokenizer.json`, and `tokenizer_config.json` sit directly inside `models/transformer_intent/`.
 
-*(Alternatively, you can retrain the weights from scratch in ~4–5 minutes on a free Google Colab or Kaggle T4 GPU using [`notebooks/colab_train_transformer.ipynb`](notebooks/colab_train_transformer.ipynb). Without the Transformer weights present, the app and tests gracefully fall back to the included `5.73 MB` TF-IDF baseline.)*
+*(Alternatively, you can retrain the weights from scratch in ~5.5 minutes on a free Google Colab or Kaggle T4 GPU using [`notebooks/colab_train_transformer.ipynb`](notebooks/colab_train_transformer.ipynb). Without the Transformer weights present, the app and tests gracefully fall back to the included `5.73 MB` TF-IDF baseline.)*
 
 ---
 
